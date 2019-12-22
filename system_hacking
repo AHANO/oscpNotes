@@ -16,6 +16,7 @@ WINDOWS
 
 #enumerate folders  in powershell
 gci -recurse . | select fullname
+Get-ChildItem -Attributes Hidden
 # Disable defender real time scan
 Set-MpPreference -DisableRealtimeMonitoring $true
 
